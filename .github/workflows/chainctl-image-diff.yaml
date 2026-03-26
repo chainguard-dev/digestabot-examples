@@ -215,7 +215,7 @@ jobs:
         fi
 
     # Create the pull request
-    - uses: peter-evans/create-pull-request@84ae59a2cdc2258d6fa0732dd66352dddae2a412 # v7.0.9
+    - uses: peter-evans/create-pull-request@c0f553fe549906ede9cf27b5156039d195d2ece0 # v8.1.0
       if: ${{ steps.create_pr_update.outputs.create_pr_update == 'true' }}
       id: pull_request
       with:
